@@ -1,0 +1,42 @@
+{
+  "name": "@seasonjs/protobuf-gen",
+  "version": "1.0.7",
+  "description": "seasonjs protobuf gen ",
+  "main": "dist/index",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+  },
+  "bin": {
+    "pb": "bin/tsproto.js"
+  },
+  "keywords": [
+    "midway",
+    "gRPC",
+    "proto",
+    "generator"
+  ],
+  "files": [
+    "bin",
+    "template.hbs",
+    "dist/**/*.js",
+    "dist/**/*.d.ts"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.0.11",
+    "mwts": "^1.0.5"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "fs-extra": "^9.0.1",
+    "handlebars": "^4.7.6",
+    "protobufjs": "^6.9.0",
+    "yargs": "^15.3.1"
+  },
+  "author": "Cyberhan123",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/seasonjs/protobuf-gen.git"
+  }
+}
