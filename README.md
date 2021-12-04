@@ -4,7 +4,7 @@ gen Protobuf type to typescript type
 ## Installation
 
 ```bash
-$ npm install @seasonjs/grpc-helper --save-dev
+ npm install @seasonjs/protobuf-gen --save-dev
 ```
 
 ## Example
@@ -33,7 +33,7 @@ message Hero {
 Generate interfaces:
 
 ```bash
-$ tsproto --path ./hero-proto
+ tsproto --path ./hero-proto
 ```
 
 Output:
@@ -60,19 +60,19 @@ export namespace hero {
 
 Base usage:
 ```bash
-$ pb --path grpc-proto
+ pb --path grpc-proto
 ```
 Output dir:
 ```bash
-$ pb --path grpc-proto --output any-dir
+ pb --path grpc-proto --output any-dir
 ```
 Target files:
 ```bash
-$ pb --path grpc-proto --target one.proto two.proto
+ pb --path grpc-proto --target one.proto two.proto
 ```
 Ignore directories or files:
 ```bash
-$ pb --path grpc-proto --ignore grpc-proto/ignore-dir
+ pb --path grpc-proto --ignore grpc-proto/ignore-dir
 ```
 
 ## Options
